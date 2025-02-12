@@ -35,7 +35,7 @@ locals {
 
 module "tr-vpc" {
   source  = "alibabacloud-automation/hybrid-cloud-network/alicloud//modules/vpc"
-  version = "1.1.0"
+  version = "2.0.0"
 
   for_each = local.vpc_tr_subnets
 
@@ -81,10 +81,10 @@ resource "alicloud_vswitch" "vswitch" {
 resource "alicloud_security_group" "vpc_security_groups" {
   for_each = var.vpcs
 
-  name              = "${each.key}-security-group"
-  vpc_id            = module.tr-vpc[each.key].vpc_id
-  resource_group_id = var.resource_group_id
-  tags              = var.tags
+  security_group_name = "${each.key}-security-group"
+  vpc_id              = module.tr-vpc[each.key].vpc_id
+  resource_group_id   = var.resource_group_id
+  tags                = var.tags
 }
 
 locals {
