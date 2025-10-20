@@ -1,12 +1,12 @@
 variable "region" {
   type        = string
   description = "The region of the resources."
-  default     = "cn-hangzhou"
+  default     = "ap-southeast-5"
 }
 
 variable "zones" {
   type        = list(string)
-  default     = ["cn-hangzhou-j", "cn-hangzhou-k"]
+  default     = ["ap-southeast-5a", "ap-southeast-5b"]
   description = "The zone ID of vSwitches. At least two availability zones are required."
 }
 
