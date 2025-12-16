@@ -88,7 +88,7 @@ variable "nlb_load_balancer_config" {
   type = object({
     load_balancer_name_suffix = optional(string, "nlb")
     load_balancer_type        = optional(string, "Network")
-    address_type              = optional(string, "Internet")
+    address_type              = optional(string, "Intranet")
     address_ip_version        = optional(string, "Ipv4")
   })
   default     = {}
