@@ -35,7 +35,7 @@ locals {
 
 module "tr-vpc" {
   source  = "alibabacloud-automation/hybrid-cloud-network/alicloud//modules/vpc"
-  version = "2.0.0"
+  version = "3.0.0"
 
   for_each = local.vpc_tr_subnets
 
@@ -172,7 +172,7 @@ resource "alicloud_cen_transit_router_route_entry" "example" {
 
 module "nat-gateway" {
   source  = "terraform-alicloud-modules/nat-gateway/alicloud"
-  version = "1.5.0"
+  version = "2.0.1"
 
   # alicloud_nat_gateway
   vpc_id       = module.tr-vpc["dmz"].vpc_id
