@@ -1,3 +1,19 @@
+## [2.0.0](https://github.com/alibabacloud-automation/terraform-alicloud-demilitarized-zone-design/compare/v1.0.2...v2.0.0) (2026-04-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* add provider version constraint for aliyun/alicloud
+
+### Features
+
+* add provider version constraint for aliyun/alicloud ([9682fa9](https://github.com/alibabacloud-automation/terraform-alicloud-demilitarized-zone-design/commit/9682fa97c70c3e12e0ad121eb23d924c4e483fb5))
+
+
+### Bug Fixes
+
+* update load balancer address_type ([e846d57](https://github.com/alibabacloud-automation/terraform-alicloud-demilitarized-zone-design/commit/e846d57bc4ac7bc572874559c754eb0594583f61))
+
 ## [1.0.2](https://github.com/alibabacloud-automation/terraform-alicloud-demilitarized-zone-design/compare/v1.0.1...v1.0.2) (2025-11-27)
 
 
